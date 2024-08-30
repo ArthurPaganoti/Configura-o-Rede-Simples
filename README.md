@@ -63,53 +63,63 @@
 
 ![image](https://github.com/user-attachments/assets/3465e807-aa49-4a9e-9163-0b6f7b6e4f21)
 
-/
+
 - Agora vamos renomear as interfaces de acordo com a nossa topologia criada no Eve (Clicamos na nossa interface e colocamos para onde essa interface vai, onde está conectada)
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/eb9d4e53-4c27-4fa3-9ac9-43d152624db5/522fe014-3629-4d48-a117-b0e0474c2aae/image.png)
+![image](https://github.com/user-attachments/assets/2489ae2b-172a-4b06-a1a8-9ac126e36f00)
 
 - Agora, vamos ativar o nosso link de internet utilizando o DHCP Client
 - Então vamos em IP, DHCP Client
 - Damos um duplo clique na interface que já vai estar criada, selecionamos a interface que recebemos o nosso link de internet e deixamos as opções marcadas
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/eb9d4e53-4c27-4fa3-9ac9-43d152624db5/93c9e609-832c-4611-8ca9-1a58d5026d3d/image.png)
+![image](https://github.com/user-attachments/assets/eda200ae-cb76-4e46-bd04-fd640d3d8740)
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/eb9d4e53-4c27-4fa3-9ac9-43d152624db5/2305a03b-3d29-459b-8d0b-58a7cdd25279/image.png)
+
+![image](https://github.com/user-attachments/assets/a418fe35-b376-4030-b430-bae91b058f45)
+
 
 - Como queremos ter duas Lan’s dentro da nossa rede vamos configurar um IP e um Servidor DHCP para nossos dois PCs
 - Vamos em IP, Address, Clicamos no + e vamos adicionar nossa primeira faixa de número IP colocando como nossa interface o nosso VPC-01: 192.168.0.1/24
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/eb9d4e53-4c27-4fa3-9ac9-43d152624db5/58b90622-4c17-460e-aa0e-97f3a2589672/image.png)
+![image](https://github.com/user-attachments/assets/2a6bdf3f-86fb-48d0-b4ef-341c5c62f4b1)
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/eb9d4e53-4c27-4fa3-9ac9-43d152624db5/9e935449-a26a-4cec-b651-b28db07b12f0/image.png)
+
+![image](https://github.com/user-attachments/assets/9cec1fc6-0b67-42d1-87e5-edf3cb450225)
+
 
 - Agora vamos adicionar o nosso DHCP-Server nessa mesma interface que colocamos o endereço de IP
 - Então vamos em IP, DHCP-Server e em DCHCP-Setup e apenas apertamos next (Ele já define tudo com base no IP que colocamos)
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/eb9d4e53-4c27-4fa3-9ac9-43d152624db5/7403b0c7-cdcb-4e8d-b693-2c8cc33793b5/image.png)
+![image](https://github.com/user-attachments/assets/de7163cc-6520-4042-b060-d40ace5c02fd)
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/eb9d4e53-4c27-4fa3-9ac9-43d152624db5/1413e79e-3c7f-453d-85d7-2cb7d08c28ad/image.png)
+
+![image](https://github.com/user-attachments/assets/dca1e191-c879-4d87-9d3e-7d8b0ad632bd)
+
 
 - Fazemos a mesma coisa agora para o nosso segundo VPC, utilizando o IP: 192.168.50.0/24
 
 - Depois que fizemos isso, os dois PCs já receberam um endereço de IP e já conseguem se comunicar entre si, então agora vamos fazer com que ambos consigam ter acesso a internet
 - Então vamos em IP, Firewall e clicamos em NAT
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/eb9d4e53-4c27-4fa3-9ac9-43d152624db5/b1be7fa5-00c5-4d89-81cb-ab0754fef68b/image.png)
+![image](https://github.com/user-attachments/assets/d0d5c064-b6a3-41aa-aaba-96ddc03716af)
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/eb9d4e53-4c27-4fa3-9ac9-43d152624db5/3a205c03-496f-4372-a26e-74bd4ff18a5f/image.png)
+
+![image](https://github.com/user-attachments/assets/7f19b522-f3f0-4736-92de-d49b03173609)
+
 
 - Vamos fazer uma regra simples de NAT apenas para termos acesso a internet
 - Vamos utilizar o Mascarado/masquerade: Para quando formos mandar alguma informação para internet, ele vai trocar o IP da nossa maquina e colocar o endereço de IP da nossa conexão que vai para internet
 - Então clicamos no + para adicionarmos uma regra de NAT
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/eb9d4e53-4c27-4fa3-9ac9-43d152624db5/a22dc5e6-6ea0-4101-baba-8f97dc689e94/image.png)
+![image](https://github.com/user-attachments/assets/76e2641d-60c9-495b-9585-4d5df97af523)
+
 
 - No Chain deixamos como srcnat
 - Depois clicamos em action e selecionamos a opção masquerade
 - E no Out.Interface selecionamos a nossa interface de saída para internet que no caso é a interface que recebemos o link
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/eb9d4e53-4c27-4fa3-9ac9-43d152624db5/dedbae1c-750f-4ad5-8af7-7a80daa87526/image.png)
+![image](https://github.com/user-attachments/assets/2ffdd4f6-178c-4865-a49b-1c5ac3cec010)
+
 
 - Se acessarmos o VPC-01 e tentarmos acessar pingar com o VPC-02 e acessar a internet, dará certo
 - Pingando do VPC-01 para o google
