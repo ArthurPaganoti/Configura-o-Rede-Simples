@@ -21,40 +21,49 @@
 - Vamos começar acessando o roteador 1 (R1)
 - Vamos no canto esquerdo do EVE, clicamos em lab details e copiamos o link do roteador 1
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/eb9d4e53-4c27-4fa3-9ac9-43d152624db5/ea43845f-2076-4824-9fd6-436e9512eec8/image.png)
+![image](https://github.com/user-attachments/assets/e9428526-41a2-44ce-95b3-a27b3fd61843)
+
 
 - Dentro do Winbox, colocamos o link do R1 que copiamos
 - No campo de login usamos o usuário admin e deixamos sem senha
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/eb9d4e53-4c27-4fa3-9ac9-43d152624db5/cfe79e7d-0242-4bc4-874a-06980e19526d/image.png)
+![image](https://github.com/user-attachments/assets/1a6cabeb-5d64-40ae-913e-a0e6f5cf1add)
+
 
 - Depois que fizermos o nosso primeiro acesso, colocamos uma senha no nosso roteador
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/eb9d4e53-4c27-4fa3-9ac9-43d152624db5/a8f239ad-079d-46a7-ae6d-5da741654ef3/image.png)
+![image](https://github.com/user-attachments/assets/fce646d4-0932-4622-a7c6-33a62daa10ac)
+
 
 - Vamos mudar o nosso do nosso Roteador
 - Vamos em System e depois em Identity
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/eb9d4e53-4c27-4fa3-9ac9-43d152624db5/285c6b2d-b73a-4e0a-b6f6-0c10074c32eb/image.png)
+![image](https://github.com/user-attachments/assets/67ecaf25-051e-4cc0-a081-ba5058c0e2de)
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/eb9d4e53-4c27-4fa3-9ac9-43d152624db5/1dddb124-f8e8-4166-aa03-d31f25e61d56/image.png)
+
+![image](https://github.com/user-attachments/assets/1903ea95-8c05-41f9-a604-6529034e1327)
+
 
 - Vai abrir essa caixinha e colocamos o nome do nosso roteador e aplicamos
 
 - Depois disso vamos renomear as interfaces do nosso roteador
 - Então, clicamos no menu de interfaces
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/eb9d4e53-4c27-4fa3-9ac9-43d152624db5/7beae94f-cabc-41c6-8b04-e6b4400947e2/image.png)
+![image](https://github.com/user-attachments/assets/ce6b841b-a443-4b7c-85a2-64d84a5797f9)
+
 
 - Se as interfaces aparecerem nessa ordem, conseguimos alterar para que apareça na ordem de 1a 5
 - Para fazermos isso, abrimos o nosso terminal e digitamos o seguinte comando: interface/ethernet/reset [f]
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/eb9d4e53-4c27-4fa3-9ac9-43d152624db5/e8b2167e-e298-4a58-b0f5-6e6e72aa7311/image.png)
+![image](https://github.com/user-attachments/assets/341446fe-85f9-4d38-9474-a7916b4c12a2)
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/eb9d4e53-4c27-4fa3-9ac9-43d152624db5/97fd76a6-93c8-450c-ad78-cda2cecf415b/image.png)
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/eb9d4e53-4c27-4fa3-9ac9-43d152624db5/4e3f525c-42ba-4b6c-97f5-b40004cb101f/image.png)
+![image](https://github.com/user-attachments/assets/0285b973-828a-431a-9cd9-6aa289d75802)
 
+
+![image](https://github.com/user-attachments/assets/3465e807-aa49-4a9e-9163-0b6f7b6e4f21)
+
+/
 - Agora vamos renomear as interfaces de acordo com a nossa topologia criada no Eve (Clicamos na nossa interface e colocamos para onde essa interface vai, onde está conectada)
 
 ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/eb9d4e53-4c27-4fa3-9ac9-43d152624db5/522fe014-3629-4d48-a117-b0e0474c2aae/image.png)
