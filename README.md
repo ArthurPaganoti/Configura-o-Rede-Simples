@@ -9,7 +9,8 @@
 # Os dispositivos configurados são da MikroTik
 
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/eb9d4e53-4c27-4fa3-9ac9-43d152624db5/3388c34b-6cb8-4efb-9bf1-53f91d855628/image.png)
+![image](https://github.com/user-attachments/assets/260dc6e7-4e47-4915-8f06-db65b5f26316)
+
 
 → Vamos fazer a configuração dessa seguinte rede.
 
